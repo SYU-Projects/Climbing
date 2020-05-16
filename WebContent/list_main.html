@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>List_main</title>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,24 +15,22 @@
             box-sizing: border-box;
         }
 
-        .container {
+        .container-box {
             background-image: url("bukhansan.jpg");
-            height: 246px;
+            height: 220px;
             width: 100%;
             background-repeat: no-repeat;
             background-size: 100%;
-        }
-        body {
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-        }
-        .header {
-            width: 100%;
-            
+            margin: 0;
+            padding: 0;
+
         }
 
-        
+        .header {
+            padding: 0 10px
+        }
+
+
 
         .logo {
             color: black;
@@ -44,6 +42,50 @@
             font-weight: 500;
         }
 
+        .img-container {
+            background-image: url("halasan.jpg");
+            height: 190px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .text-1 {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            margin-top: 66px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .text-2 {
+            text-align: center;
+            width: 100%;
+            line-height: 230px;
+            display: inline-block;
+            color: white;
+            font-size: 25px;
+        }
+
+        .list {
+            margin: 31px 3px;
+            padding: 0px 10px;
+        }
+
+        .list li {
+            list-style-type: none;
+            border-bottom: 2px solid black;
+            padding: 9px 9px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .page-box {
+
+            position: fixed;
+            bottom: 66px;
+            left: 100px;
+        }
 
         .footer {
             position: fixed;
@@ -60,24 +102,48 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="container-box">
         <div class="header">
             <span><i class='fas fa-angle-left'
                     style='font-size:70px; float:left; color:grey;display:inline-block;line-height:80px;'></i></span>
             <h1 class="logo">Climbing</h1>
             <span><i class='fas fa-pen'
                     style='font-size:45px; float:right; color:grey;display:inline-block;line-height:80px;'></i></span>
+            <div class="text-1">Mountain of Month</div>
         </div>
     </div>
-    <div class="img-container">
 
+    <div class="img-container">
+        <div class="text-2">Recommend for you</div>
 
     </div>
+    <div class="list">
+        <ul>
+            <li class="list_class" id="list_item">This is list item</li>
+            <li class="list_class" id="list_item">This is list item</li>
+            <li class="list_class" id="list_item">This is list item</li>
+            <li class="list_class" id="list_item">This is list item</li>
+            <li class="list_class" id="list_item">This is list item</li>
 
+        </ul>
+    </div>
+    <div class="page-box">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
     <div class="footer">
         <p>Copyright 2020 Climbing All Right Reserved</p>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
