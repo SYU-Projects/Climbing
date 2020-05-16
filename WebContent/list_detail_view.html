@@ -17,21 +17,18 @@
 
         .container-box {
             background-image: url("bukhansan.jpg");
-            height: 212px;
+            height: 250px;
             width: 100%;
             background-repeat: no-repeat;
             background-size: 100%;
             margin: 0;
             padding: 0;
-
         }
 
         .header {
-            padding: 0 10px
+            padding: 0 10px;
+            height: 75px;
         }
-
-
-
         .logo {
             color: black;
             font-size: 38px;
@@ -40,57 +37,38 @@
             line-height: 80px;
             padding-left: 48px;
             font-weight: 500;
+            opacity: 1;
         }
 
-        .img-container {
-            background-image: url("halasan.jpg");
-            height: 190px;
-            background-repeat: no-repeat;
-            background-size: 100%;
+        .content-box {
+            margin: 10px 30px;
+            overflow: hidden;
+
         }
 
-        .text-1 {
+        .row-box {
             text-align: center;
-            width: 100%;
-            display: inline-block;
+            border-bottom: 1px solid black;
+            padding: 9px;
+            font-size: 21px;
+
+        }
+
+        .row-info {
+            font-size: 17px;
+            float: right;
+            clear: both
+        }
+
+        .date {
+            float: right;
+            clear:both;
+            font-size: 12px;
+        }
+
+        .content {
+            clear: both;
             margin-top: 66px;
-            color: white;
-            font-size: 25px;
-        }
-
-        .text-2 {
-            text-align: center;
-            width: 100%;
-            line-height: 230px;
-            display: inline-block;
-            color: white;
-            font-size: 25px;
-        }
-
-        .list {
-            margin: 31px 3px;
-            padding: 0px 10px;
-        }
-
-        .list li {
-            list-style-type: none;
-            border-bottom: 2px solid black;
-            padding: 9px 9px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        .page-box {
-
-            box-sizing: border-box;
-            padding: 0px 60px;
-
-        }
-
-        nav {
-            margin: 52px 49px;
-            display: inline-block;
-           
         }
 
         .footer {
@@ -112,38 +90,25 @@
     <div class="container-box">
         <div class="header">
             <span><i class='fas fa-angle-left'
-                    style='font-size:70px; float:left; color:black;display:inline-block;line-height:80px;'></i></span>
+                    style='font-size:70px; float:left; color:black,inline-block;line-height:80px;'></i></span>
             <h1 class="logo">Climbing</h1>
-            <span><i class='fas fa-pen'
-                    style='font-size:45px; float:right; color:black;display:inline-block;line-height:80px;'></i></span>
-            <div class="text-1">Mountain of Month</div>
+
         </div>
     </div>
 
-    <div class="img-container">
-        <div class="text-2">Recommend for you</div>
 
-    </div>
-    <div class="list">
-        <ul>
-            <li class="list_class" id="list_item">This is list item</li>
-            <li class="list_class" id="list_item">This is list item</li>
-            <li class="list_class" id="list_item">This is list item</li>
-            <li class="list_class" id="list_item">This is list item</li>
-            <li class="list_class" id="list_item">This is list item</li>
-
-        </ul>
+    <div class="content-box">
+        <div class="row-box">Mount Redoubt</div>
+        <div class="row-info">jhon mayer</div>
+        <div class=" date">2020.05.15</div>
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt molestias repellendus
+            nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab aut!
+            Assumenda, laboriosam.
+        </div>
     </div>
     <div class="page-box">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-            </ul>
-        </nav>
+
     </div>
     </div>
     <div class="footer">
