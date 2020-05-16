@@ -41,6 +41,14 @@
             opacity: 1;
         }
 
+        .image-upload {
+            text-align: center;
+            width: 367px;
+            display: inline-block;
+            font-size: 66px;
+            
+        }
+
         .content-box {
             margin: 10px 30px;
             overflow: hidden;
@@ -72,12 +80,12 @@
         .wrapper-box {
             margin-top: 24px;
             font-size: 18px;
-            
+
         }
 
         .container-rateme {
             float: left;
-           
+
             margin: 0 auto;
             padding: 0;
 
@@ -85,64 +93,68 @@
 
         .message {
             float: right;
-           
+
             font-size: 21px;
 
         }
 
         .btn1 {
             margin: 0px 5px;
-            background-color:rgb(172, 166, 166);
+            background-color: rgb(172, 166, 166);
             padding: 0px 9px;
             border: none;
             height: 41px;
             line-height: 21px;
-            color:white
-
+            color: white
         }
-        .btn1:hover{
+
+        .btn1:hover {
             cursor: pointer;
             background-color: rgb(50, 47, 47);
-            
+
         }
-        
     </style>
 </head>
 
 <body>
+    <form action="action.jsp" method="post">
+        <div class="container-box">
+            <div class="header">
+                <span><i class='fas fa-angle-left'
+                        style='font-size:70px; float:left; color:black,inline-block;line-height:80px;'></i></span>
+                <h1 class="logo">Climbing</h1>
+                <div class="image-upload"><i class="fas fa-plus"></i></div>
 
-    <div class="container-box">
-        <div class="header">
-            <span><i class='fas fa-angle-left'
-                    style='font-size:70px; float:left; color:black,inline-block;line-height:80px;'></i></span>
-            <h1 class="logo">Climbing</h1>
-
-        </div>
-    </div>
-
-
-    <div class="content-box">
-        <div class="row-box">Title</div>
-        <div class="row-info">Name</div>
-
-        <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt molestias repellendus
-            nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab aut!
-            Assumenda, laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt
-            molestias repellendus
-            nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab aut!
-            Assumenda, laboriosam.
-        </div>
-        <div class="wrapper-box">
-            <div class="container-rateme">
-                <span id="rateMe2" class="empty-stars mdb-rating"></span>
             </div>
-
-            <div class="message"><button class="btn1" value="Cancel">Cancel </button><button class="btn1"
-                    value="Post">Post</button></i></div>
         </div>
-    </div>
 
+
+        <div class="content-box">
+            <div class="row-box" id="title">Title</div>
+            <div class="row-info" id="name">Name</div>
+
+            <div class="content" id="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt molestias
+                repellendus
+                nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab
+                aut!
+                Assumenda, laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo
+                deserunt
+                molestias repellendus
+                nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab
+                aut!
+                Assumenda, laboriosam.
+            </div>
+            <div class="wrapper-box">
+                <div class="container-rateme">
+                    <span id="rateMe2" class="empty-stars mdb-rating"></span>
+                </div>
+
+                <div class="message"><button class="btn1" id="cancel-btn" value="Cancel">Cancel </button><button
+                        class="btn1" id="post-btn" value="Post">Post</button></i></div>
+            </div>
+        </div>
+    </form>
     </div>
 
 
