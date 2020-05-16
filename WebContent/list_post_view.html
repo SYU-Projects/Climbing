@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>List_main</title>
+    <title>List_Post_view</title>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -58,29 +58,26 @@
         .row-info {
             font-size: 17px;
             float: right;
-            clear: both
-        }
-
-        .date {
-            float: right;
             clear: both;
-            font-size: 12px;
+            padding: 10px;
         }
 
         .content {
             clear: both;
-            margin-top: 66px;
+            border: 1px solid black;
+            margin-top: 56px;
+            border-radius: 8px
         }
 
         .wrapper-box {
             margin-top: 24px;
-            font-size: 25px;
-
+            font-size: 18px;
+            
         }
 
         .container-rateme {
             float: left;
-            width: 185px;
+           
             margin: 0 auto;
             padding: 0;
 
@@ -88,9 +85,27 @@
 
         .message {
             float: right;
-            width: 48px;
-            font-size: 35px;
+           
+            font-size: 21px;
+
         }
+
+        .btn1 {
+            margin: 0px 5px;
+            background-color:rgb(172, 166, 166);
+            padding: 0px 9px;
+            border: none;
+            height: 41px;
+            line-height: 21px;
+            color:white
+
+        }
+        .btn1:hover{
+            cursor: pointer;
+            background-color: rgb(50, 47, 47);
+            
+        }
+        
     </style>
 </head>
 
@@ -107,33 +122,35 @@
 
 
     <div class="content-box">
-        <div class="row-box">Mount Redoubt</div>
-        <div class="row-info">jhon mayer</div>
-        <div class=" date">2020.05.15</div>
+        <div class="row-box">Title</div>
+        <div class="row-info">Name</div>
+
         <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt molestias repellendus
             nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab aut!
-            Assumenda, laboriosam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt molestias repellendus
+            Assumenda, laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, quaerat nemo deserunt
+            molestias repellendus
             nulla, dignissimos reprehenderit vitae officia, quae corporis dolorum qui? Molestias quisquam animi ab aut!
-          
-
+            Assumenda, laboriosam.
         </div>
         <div class="wrapper-box">
             <div class="container-rateme">
                 <span id="rateMe2" class="empty-stars mdb-rating"></span>
             </div>
 
-            <div class="message"><i class="fas fa-envelope"></i></div>
+            <div class="message"><button class="btn1" value="Cancel">Cancel </button><button class="btn1"
+                    value="Post">Post</button></i></div>
         </div>
     </div>
 
     </div>
 
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <!-- mdb -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -155,8 +172,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
-  
-
     <script src="js/rating.js"></script>
 </body>
 
