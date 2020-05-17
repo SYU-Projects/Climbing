@@ -9,7 +9,7 @@ create table if not exists User(
 	username varchar(32) unique key,
 	password varchar(32),
 	email varchar(32),
-	brith varchar(6),
+	birth varchar(6),
 	gender int unsigned,
 	score int unsigned,
 	create_date timestamp default current_timestamp
