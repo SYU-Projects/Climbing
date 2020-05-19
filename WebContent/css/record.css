@@ -177,3 +177,53 @@ input[type="text"] {
     background-color: rgb(50, 47, 47);
 
 }
+.bottom-container{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    margin-top:133px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display:none;
+    background: rgb(141, 140, 140);
+    border-top-left-radius:214px ;
+    border-top-right-radius:214px ;
+    animation:mymove 1s;}
+/* .animate-btn {
+    animation:mymove 10s infinite;
+} */
+@keyframes mymove {
+    from {top: 800px;}
+    to {bottom: 0px;}
+  }
+
+  .adjust{
+     
+      margin: 58px auto;
+      
+      text-align: center;
+     
+  }
+  .time{
+      font-size: 42px;
+  }
+  .close1 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 5;
+    
+    text-align: center;
+   
+    display: inline-block;
+  
+    width: 100%;
+    
+}
+.close1:hover{
+    color:black
+}

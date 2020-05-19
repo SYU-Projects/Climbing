@@ -21,19 +21,29 @@
         </div>
 
         <button class="button start-btn">등산 시작</button>
-            <!-- display popup-box content -->
-            <div class="modal" id="modal-wrapper">
+        <!-- display popup-box content -->
+        <div class="modal" id="modal-wrapper">
 
-                <form action="action.jsp" method="post" id="popup-form" class="animate modal-content">
-                    <span class="close" title="close popup">&times;</span>
-                    <input type="text" class="form-input1" placeholder="산 이름" />
-                    <input type="text" class="form-input1" placeholder="코스 이름" />
-                    <input type="text" class="form-input1" placeholder="소요 시간" />
-                    <div class="post-btn1">Start</div>
-                    <div class="post-btn2">cancel</div>
+            <form action="action.jsp" method="post" id="popup-form" class="animate modal-content">
+                <span class="close" title="close popup">&times;</span>
+                <input type="text" class="form-input1" placeholder="산 이름" />
+                <input type="text" class="form-input1" placeholder="코스 이름" />
+                <input type="text" class="form-input1" placeholder="소요 시간" />
+                <div id="start" class="post-btn1">Start</div>
+                <div class="post-btn2">cancel</div>
 
-            </div>
-       
+        </div>
+        <!-- toggler comeout from bottom -->
+        <div class="bottom-container animate-btn">
+
+            <span class="close1 ">&times;</span>
+            <div class="time adjust ">18:10:04</div>
+            <div class="bottom-btn adjust" id="bottom-start-btn"><i class="fa fa-play-circle" style="font-size: 90px;"
+                    aria-hidden="true"></i></div>
+            <div class="bottom-btn adjust" id="bottom-pause-btn"><i class="fa fa-pause-circle" style="font-size: 90px;"
+                    aria-hidden="true"></i></div>
+        </div>
+
         <div class="old-record">기존 기록 이력</div>
         <form action="action.jsp" method="post">
             <div class="form-tag">
@@ -56,8 +66,10 @@
     <script>
 
         $(document).ready(function () {
+
             $('.button').on('click', function () {
                 $("#modal-wrapper").css('display', 'block')
+
             })
 
         });
@@ -68,6 +80,7 @@
         $(document).ready(function () {
             $('.close').on('click', function () {
                 $("#modal-wrapper").css('display', 'none')
+
             })
 
         });
@@ -81,6 +94,23 @@
             }
         }
     </script> -->
+    <script>
+        $(document).ready(function () {
+            $('.post-btn1').on('click', function () {
+                $('.bottom-container').css('display', 'block')
+                $('#modal-wrapper').hide();
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.close1').on('click', function () {
+                $('.bottom-container').css('display', 'none')
+            });
+        });
+    </script>
+
 </body>
 
 </html>
