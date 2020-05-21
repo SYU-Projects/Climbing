@@ -84,6 +84,7 @@ button {
     outline: none;
     border-bottom: solid white;
     margin: 12px 74px;
+    font-size: 18px;
 
 
 }
@@ -101,6 +102,23 @@ button:hover {
     margin-top: 10px;
     border-radius: 10px;
     outline: none;
+}
+#signup-btn{
+    border: none;
+    padding: 13px;
+    width: 32%;
+    border-radius: 14px;
+    background-color: #414345;
+    margin: 14px 203px;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+
+}
+#signup-btn:hover{
+    background-color: white;
+    color:black
+
 }
 .footer {
     position: fixed;
